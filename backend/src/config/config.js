@@ -14,7 +14,9 @@ const getConfig = () => {
   const config = {
     HOST: process.env.APP_HOST || "localhost",
     PORT: process.env.APP_PORT || "3000",
-    DB_URL: process.env.MONGODB_URI || "mongodb://localhost:27017/f1",
+    DB_URL:
+      process.env.MONGODB_URI ||
+      "mongodb+srv://elisapozzatti_db_user:elisa2004@f1box.4xamytz.mongodb.net/f1",
     FRONTEND_APP: process.env.FRONTEND_APP || "http://localhost:5173",
   };
 
