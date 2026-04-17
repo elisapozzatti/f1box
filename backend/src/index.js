@@ -14,7 +14,20 @@ const router = new Router();
 
 app.use(
   cors({
-    origin: config.FRONTEND_APP,
+    origin: (ctx) => {
+      const allowed = [
+        "https://f1box-frontend-2.vercel.app",
+        "https://f1box-frontend-2-git-main-elisapozzattis-projects.vercel.app",
+      ];
+
+      const origin = ctx.request.header.origin;
+
+      if (allowed.includes(origin)) {
+        return origin;
+      }
+
+      return "";
+    },
   }),
 );
 

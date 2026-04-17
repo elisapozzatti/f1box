@@ -18,7 +18,8 @@ const getConfig = () => {
       process.env.MONGODB_URI ||
       "mongodb+srv://elisapozzatti_db_user:elisa2004@f1box.4xamytz.mongodb.net/f1",
     FRONTEND_APP:
-      process.env.FRONTEND_APP || "https://f1box-frontend-2.vercel.app/",
+      process.env.FRONTEND_APP ||
+      "https://f1box-frontend-2-git-main-elisapozzattis-projects.vercel.app",
   };
 
   // Validazione
