@@ -18,7 +18,7 @@ router.get("/", async (ctx) => {
 });
 
 //get nome circuito
-router.get("/", async (ctx) => {
+router.get("/name", async (ctx) => {
   try {
     const circuitName = await circuitSchema.find({}, { nome: 1, _id: 0 });
     ctx.status = 200;
@@ -30,7 +30,7 @@ router.get("/", async (ctx) => {
 });
 
 //get coordinate circuito
-router.get("/", async (ctx) => {
+router.get("/coords", async (ctx) => {
   try {
     const circuitCoords = await circuitSchema.find({}, { coords: 1, _id: 0 });
     ctx.status = 200;

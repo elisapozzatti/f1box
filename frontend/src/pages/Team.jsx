@@ -7,7 +7,7 @@ function Team() {
   const API = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    fetch(`${API}/teams`)
+    fetch(`${API}/api/teams`)
       .then((res) => res.json())
       .then(setTeams)
       .catch(console.error);

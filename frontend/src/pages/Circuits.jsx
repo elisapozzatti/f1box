@@ -7,7 +7,7 @@ function Circuits() {
   const API = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    fetch(`${API}/circuits`)
+    fetch(`${API}/api/circuits`)
       .then((res) => res.json())
       .then(setCircuits)
       .catch(console.error);

@@ -29,20 +29,20 @@ function Lineup() {
   console.log("API URL:", import.meta.env.VITE_API_URL);
 
   useEffect(() => {
-    let url = checked ? `${API}/drivers/now` : `${API}/drivers`;
+    let url = checked ? `${API}/api/drivers/now` : `${API}/api/drivers`;
 
     if (checkedAll) {
-      url = `${API}/drivers`;
+      url = `${API}/api/drivers`;
     }
 
     if (selectedTeam) {
-      url = `${API}/teams/teamdrivers?team=${encodeURIComponent(selectedTeam)}`;
+      url = `${API}/api/teams/teamdrivers?team=${encodeURIComponent(selectedTeam)}`;
     } else if (selectedWorlds) {
-      url = `${API}/drivers/worldtitles?world_titles=${encodeURIComponent(
+      url = `${API}/api/drivers/worldtitles?world_titles=${encodeURIComponent(
         selectedWorlds,
       )}`;
     } else if (selectedWins) {
-      url = `${API}/drivers/wins?career_wins=${encodeURIComponent(
+      url = `${API}/api/drivers/wins?career_wins=${encodeURIComponent(
         selectedWins,
       )}`;
     }
@@ -51,7 +51,7 @@ function Lineup() {
   }, [checked, checkedAll, selectedTeam, selectedWorlds, selectedWins]);
 
   useEffect(() => {
-    fetchNameTeams(`${API}/teams/name`).then(setTeams);
+    fetchNameTeams(`${API}/api/teams/name`).then(setTeams);
   }, []);
 
   return (
