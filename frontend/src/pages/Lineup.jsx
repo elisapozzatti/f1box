@@ -25,26 +25,23 @@ function Lineup() {
   const [selectedTeam, setSelectedTeam] = useState("");
   const [selectedWorlds, setselectedWorlds] = useState("");
   const [selectedWins, setselectedWins] = useState("");
+  const API = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    let url = checked
-      ? "https://f1box-backend.onrender.com/api/drivers/now"
-      : "https://f1box-backend.onrender.com/api/drivers";
+    let url = checked ? `${API}/drivers/now` : `${API}/drivers`;
 
     if (checkedAll) {
-      url = "https://f1box-backend.onrender.com/api/drivers";
+      url = `${API}/drivers`;
     }
 
     if (selectedTeam) {
-      url = `https://f1box-backend.onrender.com/api/teams/teamdrivers?team=${encodeURIComponent(
-        selectedTeam,
-      )}`;
+      url = `${API}/teams/teamdrivers?team=${encodeURIComponent(selectedTeam)}`;
     } else if (selectedWorlds) {
-      url = `https://f1box-backend.onrender.com/api/drivers/worldtitles?world_titles=${encodeURIComponent(
+      url = `${API}/drivers/worldtitles?world_titles=${encodeURIComponent(
         selectedWorlds,
       )}`;
     } else if (selectedWins) {
-      url = `https://f1box-backend.onrender.com/api/drivers/wins?career_wins=${encodeURIComponent(
+      url = `${API}/drivers/wins?career_wins=${encodeURIComponent(
         selectedWins,
       )}`;
     }
@@ -53,9 +50,7 @@ function Lineup() {
   }, [checked, checkedAll, selectedTeam, selectedWorlds, selectedWins]);
 
   useEffect(() => {
-    fetchNameTeams("https://f1box-backend.onrender.com/api/teams/name").then(
-      setTeams,
-    );
+    fetchNameTeams(`${API}/teams/name`).then(setTeams);
   }, []);
 
   return (

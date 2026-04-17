@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 
 function Circuits() {
   const [circuits, setCircuits] = useState([]);
+  const API = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    fetch("https://f1box-backend.onrender.com/api/circuits")
+    fetch(`${API}/circuits`)
       .then((res) => res.json())
       .then(setCircuits)
       .catch(console.error);

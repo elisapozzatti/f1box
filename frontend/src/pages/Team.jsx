@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 
 function Team() {
   const [teams, setTeams] = useState([]);
+  const API = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    fetch("https://f1box-backend.onrender.com/api/teams")
+    fetch(`${API}/teams`)
       .then((res) => res.json())
       .then(setTeams)
       .catch(console.error);
