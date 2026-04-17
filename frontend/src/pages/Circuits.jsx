@@ -6,7 +6,7 @@ function Circuits() {
   const [circuits, setCircuits] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/circuits")
+    fetch("https://f1box-backend.onrender.com/api/circuits")
       .then((res) => res.json())
       .then(setCircuits)
       .catch(console.error);

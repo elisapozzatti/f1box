@@ -6,7 +6,7 @@ function Team() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/teams")
+    fetch("https://f1box-backend.onrender.com/api/teams")
       .then((res) => res.json())
       .then(setTeams)
       .catch(console.error);
