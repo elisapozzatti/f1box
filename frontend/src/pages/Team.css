@@ -1,0 +1,118 @@
+/* BASE */
+body {
+  margin: 0;
+  background-color: #0e0e0e;
+  font-family: Arial, sans-serif;
+}
+
+/* LAYOUT */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR (uguale a Lineup) */
+.sidebar {
+  width: 220px;
+  background: #3e3f42;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff1e1e;
+  margin-bottom: 30px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.voce {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.voce:hover,
+.active {
+  color: #ff1e1e;
+  background: #929497;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* CONTENUTO */
+.content {
+  flex: 1;
+}
+
+/* HEADER */
+.title {
+  color: white;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #a6051a, #ff1e3c);
+  padding: 15px;
+}
+
+/* LISTA TEAM */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* CARD TEAM */
+.team-card {
+  background: #1a1a1a;
+  width: 260px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(166, 5, 26, 0.6);
+}
+
+/* TITOLI */
+.team-name {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ff1e1e;
+}
+
+/* DATI */
+.team-data {
+  font-size: 0.9em;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .team-card {
+    width: 90%;
+  }
+}
