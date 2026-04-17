@@ -26,6 +26,7 @@ function Lineup() {
   const [selectedWorlds, setselectedWorlds] = useState("");
   const [selectedWins, setselectedWins] = useState("");
   const API = import.meta.env.VITE_API_URL;
+  console.log("API URL:", import.meta.env.VITE_API_URL);
 
   useEffect(() => {
     let url = checked ? `${API}/drivers/now` : `${API}/drivers`;
