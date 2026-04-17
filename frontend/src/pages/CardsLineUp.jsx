@@ -4,7 +4,7 @@ function CardsLineUp({ drivers }) {
       {drivers.map((driver, index) => (
         <div className="driver-card" key={index}>
           <div className="img">
-            <img src={driver.immagine} />
+            <img src={`/piloti/${driver.immagine}`} />
           </div>
 
           <h2 className="driver-name">
