@@ -1,3 +1,3 @@
-Progetto sulla formula 1 dove c'è la lista di tutti i piloti di sempre, tutte le scuderie e tutti i circuiti.
+Progetto ancora in fase di sviluppo sulla formula 1 dove c'è la lista di tutti i piloti di sempre, tutte le scuderie e tutti i circuiti.
 Piloti, scuderie e circuiti hanno tutti le loro informazioni come vittorie, pole position, campionati del mondo, chilometraggio...
 Per avviare il backend in locale: npm start, mentre npm run dev per il frontend.
