@@ -23,6 +23,16 @@ export default function Homepage() {
           </Link>
         </nav>
         <footer>
+          <a href="https://portfolio-mipresento.vercel.app/">
+            <p
+              style={{
+                fontSize: "10px",
+                marginBottom: "10px",
+              }}
+            >
+              Torna al portfolio
+            </p>
+          </a>
           <p>©2026 F1 Box. All rights reserved.</p>
         </footer>
       </aside>
