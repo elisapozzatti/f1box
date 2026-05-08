@@ -16,6 +16,7 @@ app.use(
   cors({
     origin: (ctx) => {
       const allowed = [
+        "http://localhost:5173",
         "https://f1box-frontend-2.vercel.app",
         "https://f1box-frontend-2-git-main-elisapozzattis-projects.vercel.app",
       ];
