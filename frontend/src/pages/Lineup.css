@@ -66,25 +66,26 @@ body {
 
 /* FILTRI */
 .filter-container {
-  background-color: #1a1a1a;
+  background-color: white;
   border-radius: 10px;
   margin: 20px auto;
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 15px;
-  max-width: 900px;
+  width: 80vw;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .checkbox {
-  color: white;
+  color: #1a1a1a;
   font-family: "Trebuchet MS";
 }
 
 .wc-title {
-  color: #ccc;
+  color: #1a1a1a;
   margin: 0;
   font-size: 0.9em;
 }
@@ -93,8 +94,8 @@ body {
   border: none;
   border-radius: 5px;
   padding: 6px;
-  background-color: #2a2a2a;
-  color: white;
+  background-color: #ccc;
+  color: #1a1a1a;
   outline: none;
 }
 
@@ -108,9 +109,9 @@ body {
 
 /* CARD */
 .driver-card {
-  background-color: #1a1a1a;
+  background-color: white;
   height: 320px;
-  width: 220px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -123,7 +124,7 @@ body {
 
 .driver-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(166, 5, 26, 0.5);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.8);
 }
 
 /* IMMAGINE */
@@ -146,7 +147,7 @@ body {
 /* TESTI */
 .driver-name {
   text-align: center;
-  color: white;
+  color: #1a1a1a;
   margin: 5px 0;
 }
 
@@ -160,6 +161,7 @@ body {
 
 .infos {
   margin: 0;
+  color: #1a1a1a;
 }
 
 /* RESPONSIVE */

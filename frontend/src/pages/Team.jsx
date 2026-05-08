@@ -51,8 +51,12 @@ function Team() {
               <h2 className="team-name">{team.name}</h2>
 
               <div className="team-data">
+                <div className="team-img">
+                  <img src={`/scuderie/${team.image}`} />
+                </div>
                 <p>
-                  <strong>Team Principal:</strong> {team.current_teamprincipal}
+                  <strong>Attuale Team Principal:</strong>{" "}
+                  {team.current_teamprincipal}
                 </p>
                 <p>
                   <strong>Debutto:</strong> {team.entry_year}

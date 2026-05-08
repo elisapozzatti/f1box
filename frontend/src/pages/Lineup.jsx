@@ -84,24 +84,6 @@ function Lineup() {
       <div className="content">
         <div className="title">
           <h3 className="f1">PILOTI</h3>
-
-          <button className="menu" onClick={() => setOpen(!open)}>
-            <img src={menus} className="iconMenu" />
-          </button>
-
-          {open && (
-            <ul className="menuTendina">
-              <Link to="/">
-                <li className="voci">Home</li>
-              </Link>
-              <Link to="/Calendar">
-                <li className="voci">Calendario</li>
-              </Link>
-              <Link to="/Circuitsmap">
-                <li className="voci">Mappa</li>
-              </Link>
-            </ul>
-          )}
         </div>
 
         {/* FILTRI */}

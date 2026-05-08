@@ -16,6 +16,7 @@ const teamSchema = new mongoose.Schema({
   drivers_championships: Number,
   current_teamprincipal: String,
   most_successful_driver: String,
+  image: String,
 });
 
 export default mongoose.model("Team", teamSchema);

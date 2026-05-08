@@ -75,32 +75,43 @@ body {
 
 /* CARD TEAM */
 .team-card {
-  background: #1a1a1a;
-  width: 260px;
+  background: white;
+  width: 270px;
   margin: 15px;
   padding: 20px;
   border-radius: 15px;
   color: white;
   transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .team-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(166, 5, 26, 0.6);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.8);
+}
+
+/*IMMAGINE*/
+.team-img {
+  width: 90%;
+  height: 20%;
+}
+
+.team-img img {
+  width: 100%;
+  object-fit: cover;
+  margin: 20px 0;
 }
 
 /* TITOLI */
 .team-name {
   text-align: center;
   margin-bottom: 10px;
-  color: #ff1e1e;
+  color: #1a1a1a;
 }
 
 /* DATI */
 .team-data {
   font-size: 0.9em;
-  color: #ccc;
+  color: #1a1a1a;
   display: flex;
   flex-direction: column;
   gap: 5px;
